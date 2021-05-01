@@ -1,3 +1,5 @@
 # library
 
-This is a library app styled with CSS and built with vanilla Javascript. I learned a lot about DOM manipulation in this project. 
+This is a library app styled with CSS and built with vanilla Javascript. I learned a lot about DOM manipulation in this project.
+
+Live preview: https://silverforger.github.io/library/
