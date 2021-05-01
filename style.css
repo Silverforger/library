@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+    color: black;
+    min-height: 100vh;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.form-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    top: 15%;
+    left: 45%;
+    border: 1px solid #000;
+}
+
+.form-header {
+    height: 70px;
+    border-bottom: 1px solid black;
+    background-color: #a19f9f;
+    align-items: center;
+    position: relative;
+}
+
+.form-container h2 {
+    display: inline-block;
+    margin: 20px 0px 0px 20px;
+}
+
+.form-container .add-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    color: #000;
+    background-color: rgb(250, 108, 108);
+}
+
+#popform {
+    text-align: center;
+}
+
+#popform .input {
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 1.3em;
+    height: 35px;
+}
+
+#popform p {
+    margin: 15px auto;
+    font-size: 1.3em;
+}
+
+#addBook {
+    font-size: 1.3em;
+    width: 70%;
+}
+
+.left-container {
+    width: 25%;
+    height: 100vh;
+    background-color: rgb(66, 209, 0);
+    border-right: 2px solid black;
+    position: fixed;
+    z-index: 9999;
+}
+
+.btn-new {
+    font-size: 1.1em;
+    height: 50px;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    margin-top: 10px;
+    border-left: none;
+    border-right: none;
+}
+
+.btn-new:hover {
+    color:rgb(144, 245, 98);
+    background-color: #000;
+}
+
+.page-title {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.page-title h1, h3 {
+    margin: 10px;
+}
+
+.page-title h1 {
+    font-size: 2.5em;
+}
+
+.page-title h3 {
+    font-size: 1em;
+}
+
+.books-container {
+    margin: 50px 0px 0px auto;
+    position: absolute;
+    left: 26.5%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-auto-rows: auto;
+    justify-content: center;
+}
+
+.book {
+    width: 200px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 20px 0;
+    background-color: #501B00;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.book div {
+    text-align: center;
+}
+
+.book .title {
+    margin-top: 70px;
+}
+
+.book .author {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.book .pages {
+    margin-top: 30px;
+    font-size: 0.8em;
+    height: 350px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: 15px;
+    
+}
+ 
+.book .deleteBtn, .finishedBtn {
+    display: block;
+    margin: 15px auto;
+    width: 60%;
+    height: 30px;
+}
+
+.book .finishedBtn {
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+}
+
+.book .deleteBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+
+

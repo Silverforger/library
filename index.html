@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="page-title">
+                <h1>Read Books?</h1>
+                <h3>by Silverforger</h3>
+                <button class="btn-new">Add New Book</button>
+            </div>
+        </div>
+        <div class="books-container"></div>
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Add New Book</h2>
+                <button class="add-close">X</button>
+            </div>
+            <form id="popform" action="./script.js">
+                <input class="input" type="text" id="title" name="title" placeholder="Title of Book">
+                <input class="input" type="text" id="author" name="author" placeholder="Author of Book">
+                <input class="input" type="text" id="pages" name="pages" placeholder="Total Number of Pages">
+                <p><label >Finished?: </label><input type='checkbox' id='finished' name='finished' value='yes'></p>
+                <button type='submit' form='form' id='addBook'>Add</button>
+            </form>
+        </div>
+    </div><!-- end of container -->
+    <script src="script.js"></script>
+</body>
+</html>
